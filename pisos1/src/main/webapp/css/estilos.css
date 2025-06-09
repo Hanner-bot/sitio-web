@@ -1,0 +1,331 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #333;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Header */
+#main-header {
+    background: linear-gradient(to right, #333, #555);
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#main-header h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+#main-header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+#main-header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+#main-header img:hover {
+    transform: scale(1.05);
+}
+
+/* Barra de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 15px 25px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Banner */
+#banner {
+    background: linear-gradient(to bottom, #007bff, #0056b3);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#banner h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+#banner p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Productos */
+#productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.producto {
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 300px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.producto h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.producto p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.producto button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.producto img:hover {
+    transform: scale(1.05);
+}
+
+.producto button:hover {
+    background-color: #0056b3;
+}
+
+/* Servicios */
+#servicios {
+    background-color: #e9ecef;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#servicios h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+#servicios ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#servicios ul li {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Ubicación (Google Maps) */
+#ubicacion {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#ubicacion iframe {
+    border: 0;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    transition: transform 0.3s ease;
+}
+
+#ubicacion iframe:hover {
+    transform: scale(1.02);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+/* Redes sociales */
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+ul li {
+    margin: 0 15px;
+}
+
+ul li a img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+ul li a img:hover {
+    transform: scale(1.2);
+}
+
+/* Animaciones y Transiciones */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#main-header, #banner, #productos, #servicios, #ubicacion {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+footer ul.redes-sociales {
+    list-style: none;
+    display: flex;
+    justify-content: center;  /* Alinea horizontalmente centrado */
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+footer ul.redes-sociales li {
+    margin: 0 15px;
+}
+
+footer ul.redes-sociales li a img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+footer ul.redes-sociales li a img:hover {
+    transform: scale(1.2);
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Hace que en pantallas pequeñas se apilen */
+    text-align: center;
+    gap: 20px;
+}
+
+.footer-text, .footer-follow {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+footer .social a img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+footer .social a img:hover {
+    transform: scale(1.2);
+}
+
